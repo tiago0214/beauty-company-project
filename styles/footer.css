@@ -1,0 +1,13 @@
+.footer {
+    /* margin: auto; */
+    padding: 1em;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer--text {
+    font-size: 12px;
+    width: 90vw;
+    margin: auto;
+}

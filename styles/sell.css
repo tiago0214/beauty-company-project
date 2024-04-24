@@ -1,0 +1,43 @@
+.container__sell {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__sell {
+    width: 90vw;
+}
+
+.container__sell--title {
+    font-size: 24px;
+    /* max-width: 100%; */
+}
+
+.container__sell--products {
+    display: flex;
+
+}
+
+.container__sell--card {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 1vw;
+    justify-content: space-between;
+}
+
+.container__sell--card--img {
+    max-width: 100%;
+}
+
+.container__sell--card--link {
+    display: flex;
+}
+
+.container__sell--card--item--link {
+    padding: 1em;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: 12px;
+}

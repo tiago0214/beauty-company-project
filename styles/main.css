@@ -70,3 +70,8 @@
     color: #000000;
     text-decoration: none;
 }
+
+.container__principal__banner__lista {
+    width: 100%;
+    padding: 0;
+}

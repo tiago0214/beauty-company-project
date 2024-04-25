@@ -15,7 +15,6 @@
 
 .container__sell--products {
     display: flex;
-
 }
 
 .container__sell--card {
@@ -40,4 +39,13 @@
     background-color: #000000;
     color: aliceblue;
     font-size: 12px;
+}
+
+@media screen and (max-width:600px) {
+    .container__sell--card--item--link {
+        width: 7em;
+        padding: 0;
+        text-align: center;
+        padding: 1em 0;
+    }
 }

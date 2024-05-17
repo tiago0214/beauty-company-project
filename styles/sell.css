@@ -39,6 +39,7 @@
     background-color: #000000;
     color: aliceblue;
     font-size: 12px;
+    text-decoration: none;
 }
 
 @media screen and (max-width:600px) {

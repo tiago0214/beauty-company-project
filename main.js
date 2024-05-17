@@ -1,6 +1,6 @@
 const menu = document.getElementById('menu');
 const listaItens = document.getElementById('lista');
-const sellProducts = document.querySelector('.container__sell--products');
+const sellProducts = document.querySelector('.swiper-wrapper');
 let itens = []
 
 menu.addEventListener('click', (event) => {
@@ -13,6 +13,11 @@ menu.addEventListener('click', (event) => {
 })
 
 function createElement(product) {
+
+    const slide = document.createElement('div');
+    slide.classList.add('swiper-slide');
+    slide.style.display = "flex";
+
     const ul = document.createElement('ul');
     ul.classList.add('container__sell--card');
 
@@ -39,6 +44,8 @@ function createElement(product) {
     link.classList.add('container__sell--card--item--link');
     link.innerHTML = `ADD TO BAG`
 
+
+    slide.appendChild(ul)
     ul.appendChild(imgParent);
     ul.appendChild(name);
     ul.appendChild(value);
@@ -47,7 +54,7 @@ function createElement(product) {
     imgParent.appendChild(img);
     linkParent.appendChild(link);
 
-    return ul
+    return slide
 }
 
 fetch('./products/products.json')

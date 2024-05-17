@@ -12,6 +12,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .swiper-button-next {
+            color: rgb(204, 133, 174);
+        }
+
+        .swiper-button-prev {
+            color: rgb(204, 133, 174);
+        }
+    </style>
 </head>
 
 <body>
@@ -120,43 +131,56 @@
         <section class="container__sell">
             <div class="container__sell--title">Technicolor lashes</div>
             <div class="container__sell--products">
-                <!-- <ul class="container__sell--card">
-                    <li class="container__sell--card--img"><img class="container__sell--card--img"
-                            src="./assets/img-sell/2572577.jpeg" alt=""></li>
-                    <li class="container__sell--card--name">Unlocked Instant Extensions Mascara</li>
-                    <li class="container__sell--card--value">R$32.00</li>
-                    <li class="container__sell--card--link">
-                        <a class="container__sell--card--item--link">ADD TO BAG</a>
-                    </li>
-                </ul>
-                <ul class="container__sell--card">
-                    <li class="container__sell--card--img"><img class="container__sell--card--img"
-                            src="./assets/img-sell/2596644.jpeg" alt=""></li>
-                    <li class="container__sell--card--name">Tartelette Tubing Mascara</li>
-                    <li class="container__sell--card--value">R$25.00</li>
-                    <li class="container__sell--card--link">
-                        <a class="container__sell--card--item--link">ADD TO BAG</a>
-                    </li>
-                </ul>
-                <ul class="container__sell--card">
-                    <li class="container__sell--card--img"><img class="container__sell--card--img"
-                            src="./assets/img-sell/2603635.jpeg" alt=""></li>
-                    <li class="container__sell--card--name">Better Than Sex Chocolate Volumizing & Lengthening Mascara
-                    </li>
-                    <li class="container__sell--card--value">R$38.00</li>
-                    <li class="container__sell--card--link">
-                        <a class="container__sell--card--item--link">ADD TO BAG</a>
-                    </li>
-                </ul>
-                <ul class="container__sell--card">
-                    <li class="container__sell--card--img"><img class="container__sell--card--img"
-                            src="./assets/img-sell/2611811.jpeg" alt=""></li>
-                    <li class="container__sell--card--name">Le 8 Hypnôse Serum-Infused Volumizing Mascara</li>
-                    <li class="container__sell--card--value">R$30.00</li>
-                    <li class="container__sell--card--link">
-                        <a class="container__sell--card--item--link">ADD TO BAG</a>
-                    </li>
-                </ul> -->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper ">
+                        <!-- Slides -->
+                        <!-- <div class="swiper-slide ">
+                            <ul class="container__sell--card">
+                                <li class="container__sell--card--img"><img class="container__sell--card--img"
+                                        src="./assets/img-sell/2572577.jpeg" alt=""></li>
+                                <li class="container__sell--card--name">Unlocked Instant Extensions Mascara</li>
+                                <li class="container__sell--card--value">R$32.00</li>
+                                <li class="container__sell--card--link">
+                                    <a class="container__sell--card--item--link">ADD TO BAG</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="container__sell--card">
+                                <li class="container__sell--card--img"><img class="container__sell--card--img"
+                                        src="./assets/img-sell/2572577.jpeg" alt=""></li>
+                                <li class="container__sell--card--name">Unlocked Instant Extensions Mascara</li>
+                                <li class="container__sell--card--value">R$32.00</li>
+                                <li class="container__sell--card--link">
+                                    <a class="container__sell--card--item--link">ADD TO BAG</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="container__sell--card">
+                                <li class="container__sell--card--img"><img class="container__sell--card--img"
+                                        src="./assets/img-sell/2572577.jpeg" alt=""></li>
+                                <li class="container__sell--card--name">Unlocked Instant Extensions Mascara</li>
+                                <li class="container__sell--card--value">R$32.00</li>
+                                <li class="container__sell--card--link">
+                                    <a class="container__sell--card--item--link">ADD TO BAG</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
             </div>
         </section>
         <section class="container__member">
@@ -245,6 +269,7 @@
                 </a>
             </div>
         </section>
+
     </main>
     <footer>
         <div class="bar"></div>
@@ -255,6 +280,36 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
+            slidesPerView: 4,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

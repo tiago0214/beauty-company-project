@@ -21,7 +21,7 @@
     margin-top: 2vw;
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    /* width: 50vw; */
     gap: 1vw;
     justify-content: space-between;
 }
@@ -41,6 +41,19 @@
     font-size: 12px;
     text-decoration: none;
 }
+
+/* .swiper-button-prev,
+.swiper-button-next {
+    color: var(--cor-rosa-destaque);
+} */
+
+.swiper {
+    width: 80%;
+}
+
+/* .swiper-pagination {
+    padding: 2em 0 3em 0;
+} */
 
 @media screen and (max-width:600px) {
     .container__sell--card--item--link {

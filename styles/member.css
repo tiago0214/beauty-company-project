@@ -5,12 +5,12 @@
 }
 
 .container__member--banner {
-    width: 70vw;
+    width: 1118px;
     background-image: url("/assets/HP_WK1224_IBC_MemberLove_XL.webp");
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-    background-size: cover;
+    /* background-size: cover; */
     height: 200px;
     padding: 2em;
 }

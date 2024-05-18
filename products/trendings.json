@@ -1,0 +1,37 @@
+[
+    {
+        "img": "../assets/trendings/buble.jpeg",
+        "name": "Bubble Level Up Balancing Moisturizer",
+        "value": "R$25.00"
+    },
+    {
+        "img": "../assets/trendings/Glow.jpeg",
+        "name": "Glow Reviver Lip Oil",
+        "value": "R$19.00"
+    },
+    {
+        "img": "../assets/trendings/NYX.jpeg",
+        "name": "NYX Professional Makeup ",
+        "value": "R$19.00"
+    },
+    {
+        "img": "../assets/trendings/Pout.jpeg",
+        "name": "Pout Preserve Peptide Lip Treatment",
+        "value": "R$19.00"
+    },
+    {
+        "img": "../assets/trendings/Sol_de_janeiro.jpeg",
+        "name": "Sol de Janeiro Cheirosa 40 Perfume Mist",
+        "value": "R$19.00"
+    },
+    {
+        "img": "../assets/trendings/The_Ordinary.jpeg",
+        "name": "The Ordinary Glycolic Acid ",
+        "value": "R$19.00"
+    },
+    {
+        "img": "../assets/trendings/Touchland.jpeg",
+        "name": "Touchland Power Mist Wild Watermelon",
+        "value": "R$19.00"
+    }
+]

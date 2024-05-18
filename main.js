@@ -1,7 +1,10 @@
 const menu = document.getElementById('menu');
 const listaItens = document.getElementById('lista');
 const sellProducts = document.querySelector('.swiper-wrapper');
-let itens = []
+const trendings = document.querySelector('#trendings');
+
+let itensSell = []
+let itensTrending = []
 
 menu.addEventListener('click', (event) => {
     event.preventDefault();
@@ -60,9 +63,19 @@ function createElement(product) {
 fetch('./products/products.json')
     .then((response) => response.json())
     .then((json) => {
-        itens = json
+        itensSell = json
         sellProducts.innerHTML = ""
-        itens.forEach(element => {
+        itensSell.forEach(element => {
             sellProducts.appendChild(createElement(element))
         });
+    })
+
+fetch('./products/trendings.json')
+    .then((response) => response.json())
+    .then((json) => {
+        itensTrending = json
+        trendings.innerHTML = ""
+        itensTrending.forEach((element) => {
+            trendings.appendChild(createElement(element));
+        })
     })

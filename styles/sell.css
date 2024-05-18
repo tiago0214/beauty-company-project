@@ -26,7 +26,8 @@
 }
 
 .container__sell--card--img {
-    max-width: 100%;
+    max-width: 90%;
+    text-align: center;
 }
 
 .container__sell--card--link {
@@ -97,5 +98,11 @@
     .swiper-slide,
     .swiper-slide-next {
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container__sell--card {
+        width: 250px;
     }
 }

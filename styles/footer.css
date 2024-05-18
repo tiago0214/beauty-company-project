@@ -29,7 +29,7 @@
 .second__title,
 .third__title {
     font-weight: 900;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .first__link,
@@ -37,5 +37,10 @@
 .third__link {
     text-decoration: none;
     color: var(--cor-cinza-claro);
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.third__link {
+    display: flex;
+    gap: 5px;
 }

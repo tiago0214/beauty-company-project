@@ -1,5 +1,9 @@
 const menu = document.getElementById('menu');
+const menuBag = document.getElementById('menu--bag');
+
 const listaItens = document.getElementById('lista');
+const listaItensBag = document.getElementById('lista--bag');
+
 const sellProducts = document.querySelector('.swiper-wrapper');
 const trendings = document.querySelector('#trendings');
 
@@ -14,6 +18,14 @@ menu.addEventListener('click', (event) => {
         listaItens.style.display = "block";
     }
 })
+// menuBag.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     if (listaItensBag.style.display === "block") {
+//         listaItensBag.style.display = 'none';
+//     } else {
+//         listaItensBag.style.display = "block";
+//     }
+// })
 
 function createElement(product) {
 

@@ -2,7 +2,7 @@
     width: 90vw;
     display: flex;
     flex-direction: column;
-    margin: 1em auto;
+    margin: auto;
     justify-content: space-between;
     gap: 4vw;
 
@@ -10,6 +10,7 @@
 
 
 .itens {
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
 }

@@ -5,6 +5,7 @@
 @import url("./styles/today.css");
 @import url("./styles/category.css");
 @import url("./styles/footer.css");
+@import url("./styles/service.css");
 
 :root {
     --fonte-principal: "Poppins";

@@ -6,6 +6,7 @@
 @import url("./styles/category.css");
 @import url("./styles/footer.css");
 @import url("./styles/service.css");
+@import url("./styles/bag_user/mascaras.css");
 
 :root {
     --fonte-principal: "Poppins";

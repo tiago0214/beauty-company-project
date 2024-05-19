@@ -1,9 +1,14 @@
+/* body {
+    height: 100vw;
+} */
+
 .footer {
     margin: auto;
     padding: 2em 0 1em 0;
     background-color: #f6f6f6;
     display: flex;
     justify-content: space-around;
+    bottom: 0;
 }
 
 .footer__imagem {
@@ -43,4 +48,10 @@
 .third__link {
     display: flex;
     gap: 5px;
+}
+
+@media screen and (max-width: 550px) {
+    .footer__second {
+        display: none;
+    }
 }

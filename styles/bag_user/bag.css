@@ -8,7 +8,6 @@
 
 }
 
-
 .itens {
     margin-top: 1em;
     display: flex;
@@ -39,12 +38,6 @@
 .item__img {
     max-width: 100%;
 }
-
-
-
-
-
-
 
 
 .sumary {

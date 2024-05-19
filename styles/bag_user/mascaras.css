@@ -1,0 +1,40 @@
+.special {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    gap: 4vw;
+
+}
+
+.item {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.item__title {
+    font-size: 20px;
+}
+
+.item__bag {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.item__item {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.item__img {
+    max-width: 100%;
+}

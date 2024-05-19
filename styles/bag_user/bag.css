@@ -88,6 +88,14 @@
 
 }
 
+.empty {
+    display: flex;
+    font-size: 40px;
+    width: 80vw;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width : 550px) {
     .sumary {

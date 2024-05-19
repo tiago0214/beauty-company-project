@@ -10,6 +10,8 @@ const trendings = document.querySelector('#trendings');
 let itensSell = []
 let itensTrending = []
 
+let bag = JSON.parse(localStorage.getItem('bag')) || [];
+
 menu.addEventListener('click', (event) => {
     event.preventDefault();
     if (listaItens.style.display === "block") {
@@ -50,6 +52,11 @@ function createElement(product) {
     link.setAttribute('href', '#')
     link.classList.add('container__sell--card--item--link');
     link.innerHTML = `ADD TO BAG`
+    link.onclick = (event) => {
+        event.preventDefault()
+        bag.push(product);
+        reload(bag);
+    }
 
 
     slide.appendChild(ul)
@@ -83,3 +90,7 @@ fetch('./products/trendings.json')
             trendings.appendChild(createElement(element));
         })
     })
+
+function reload(param) {
+    localStorage.setItem('bag', JSON.stringify(param));
+}

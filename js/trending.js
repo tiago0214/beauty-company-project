@@ -3,6 +3,9 @@
 const trending = document.querySelector('#trend');
 let itens = []
 
+let trendingBag = JSON.parse(localStorage.getItem('bag')) || [];
+
+
 fetch('../products/trendings.json')
     .then(response => response.json())
     .then(json => {
@@ -36,6 +39,11 @@ function createTrend(produtc) {
     bag.setAttribute('href', '#');
     bag.classList.add('add__bag');
     bag.innerHTML = `Add to bag`
+    bag.onclick = (event) => {
+        event.preventDefault()
+        trendingBag.push(produtc);
+        reload(trendingBag);
+    }
 
     ul.appendChild(liImg);
     liImg.appendChild(img)
@@ -45,4 +53,8 @@ function createTrend(produtc) {
     info.appendChild(bag);
 
     return ul;
+}
+
+function reload(param) {
+    localStorage.setItem('bag', JSON.stringify(param));
 }

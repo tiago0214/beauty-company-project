@@ -13,8 +13,9 @@
 .category__topics {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 2vw;
+
     /* max-width: 100%; */
 }
 
@@ -31,6 +32,7 @@
     align-items: center;
     text-decoration: none;
     margin: 1em;
+    width: 10vw;
 
 }
 

@@ -2,6 +2,8 @@ const mascaras = document.querySelector('#mascaras');
 
 let itens = []
 
+let mascarasBag = JSON.parse(localStorage.getItem('bag')) || [];
+
 fetch('../products/products.json')
     .then(response => response.json())
     .then(json => {
@@ -36,6 +38,11 @@ export default function createProducts(produtc) {
     bag.setAttribute('href', '#');
     bag.classList.add('add__bag');
     bag.innerHTML = `Add to bag`
+    bag.onclick = (event) => {
+        event.preventDefault()
+        mascarasBag.push(produtc);
+        reload(mascarasBag);
+    }
 
     ul.appendChild(liImg);
     liImg.appendChild(img)
@@ -45,4 +52,8 @@ export default function createProducts(produtc) {
     info.appendChild(bag);
 
     return ul;
+}
+
+function reload(param) {
+    localStorage.setItem('bag', JSON.stringify(param));
 }

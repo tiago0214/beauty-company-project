@@ -5,8 +5,6 @@ const listaItens = document.getElementById('lista');
 const listaItensBag = document.getElementById('lista--bag');
 
 const sellProducts = document.querySelector('.swiper-wrapper');
-const mascaras = document.querySelector('#mascaras');
-
 const trendings = document.querySelector('#trendings');
 
 let itensSell = []
@@ -85,37 +83,3 @@ fetch('./products/trendings.json')
             trendings.appendChild(createElement(element));
         })
     })
-
-function createProducts(produtc) {
-    const ul = document.createElement('ul');
-    ul.classList.add('item__item');
-
-    const liImg = document.createElement('li');
-    liImg.classList.add('item__img');
-    const img = document.createAttribute('img');
-    img.classList.add('item__img');
-    img.setAttribute('src', produtc.img)
-
-    const name = document.createElement('li');
-    name.classList.add('name');
-    name.innerHTML = `${produtc.name}`
-
-    const info = document.createElement('li');
-    info.classList.add('info');
-    const value = document.createElement('p');
-    value.classList.add('value');
-    value.innerHTML = `${produtc.value}`
-
-    const bag = document.createElement('a');
-    bag.classList.add('add__bag');
-    bag.innerHTML = `Add to bag`
-
-    ul.appendChild(liImg);
-    liImg.appendChild(img)
-    ul.appendChild(name);
-    ul.appendChild(info);
-    info.appendChild(value);
-    info.appendChild(bag);
-
-    return ul;
-}

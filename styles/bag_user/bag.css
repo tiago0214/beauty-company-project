@@ -1,5 +1,5 @@
 .bag {
-    width: 90vw;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -46,7 +46,7 @@
     /* justify-content: space-between; */
     margin: auto;
     width: 500px;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 }
 
 .sumary__title {
@@ -91,7 +91,6 @@
 .empty {
     display: flex;
     font-size: 40px;
-    width: 80vw;
     height: 20vw;
     justify-content: center;
     align-items: center;
@@ -100,6 +99,10 @@
 @media screen and (max-width : 550px) {
     .sumary {
         width: 100%;
+    }
+
+    .bag {
+        width: 90vw;
     }
 
     .itens__bag--item {

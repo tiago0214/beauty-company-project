@@ -27,7 +27,7 @@ bagy.forEach(element => {
 
 function createPro(produtc) {
     const ul = document.createElement('ul');
-    ul.classList.add('item__item');
+    ul.classList.add('itens__bag--item');
 
     const liImg = document.createElement('li');
     liImg.classList.add('item__img');

@@ -75,3 +75,22 @@
     width: 100%;
     padding: 0;
 }
+
+.icon {
+    /* right: 9%; */
+    /* margin-top: 1px; */
+    position: absolute;
+    justify-content: center;
+    /* top: 10%; */
+    transform: translate(-220%, 60%);
+    font-size: 13px;
+}
+
+.BagIcon__notificationDot {
+    background-color: blue;
+    border-radius: 50%;
+    height: .5rem;
+    position: absolute;
+    transform: translate(-80%, 50%);
+    width: .461rem;
+}

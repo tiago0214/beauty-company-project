@@ -66,8 +66,7 @@ function createPro(produtc) {
         ul.remove();
         removeItem();
         updateValue();
-
-
+        updateIcon();
     }
 
     return ul;
@@ -75,7 +74,6 @@ function createPro(produtc) {
 
 function updateValue() {
     totalValue -= selectObject
-
     itensElement.innerHTML = `${bagy.length}`
     valueDocument.innerHTML = `R$ ${totalValue}`
 }
@@ -91,5 +89,17 @@ function removeItem() {
 function reload(param) {
     localStorage.setItem('bag', JSON.stringify(param));
 }
+
+function updateIcon() {
+    icon.innerHTML = `${bagy.length}`
+
+    if (icon.innerHTML > 9) {
+        icon.style.transform = "translate(-140%, 60%)";
+    } else {
+        icon.style.transform = "translate(-220%, 60%)";
+    }
+}
+
+updateIcon();
 
 updateValue();

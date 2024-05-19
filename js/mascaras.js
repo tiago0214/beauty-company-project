@@ -1,4 +1,5 @@
 const mascaras = document.querySelector('#mascaras');
+// const icon = document.querySelector('.icon');
 
 let itens = []
 
@@ -42,6 +43,7 @@ export default function createProducts(produtc) {
         event.preventDefault()
         mascarasBag.push(produtc);
         reload(mascarasBag);
+        updateIcon();
     }
 
     ul.appendChild(liImg);
@@ -57,3 +59,15 @@ export default function createProducts(produtc) {
 function reload(param) {
     localStorage.setItem('bag', JSON.stringify(param));
 }
+
+function updateIcon() {
+    icon.innerHTML = `${mascarasBag.length}`;
+
+    if (icon.innerHTML > 9) {
+        icon.style.transform = "translate(-140%, 60%)";
+    } else {
+        icon.style.transform = "translate(-220%, 60%)";
+    }
+}
+
+updateIcon();

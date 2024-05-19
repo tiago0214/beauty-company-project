@@ -73,25 +73,29 @@ function createElement(product) {
     return slide
 }
 
-fetch('./products/products.json')
-    .then((response) => response.json())
-    .then((json) => {
-        itensSell = json
-        sellProducts.innerHTML = ""
-        itensSell.forEach(element => {
-            sellProducts.appendChild(createElement(element))
-        });
-    })
-
-fetch('./products/trendings.json')
-    .then((response) => response.json())
-    .then((json) => {
-        itensTrending = json
-        trendings.innerHTML = ""
-        itensTrending.forEach((element) => {
-            trendings.appendChild(createElement(element));
+function loading() {
+    fetch('./products/products.json')
+        .then((response) => response.json())
+        .then((json) => {
+            itensSell = json
+            sellProducts.innerHTML = ""
+            itensSell.forEach(element => {
+                sellProducts.appendChild(createElement(element))
+            });
         })
-    })
+
+    fetch('./products/trendings.json')
+        .then((response) => response.json())
+        .then((json) => {
+            itensTrending = json
+            trendings.innerHTML = ""
+            itensTrending.forEach((element) => {
+                trendings.appendChild(createElement(element));
+            })
+        })
+}
+
+
 
 function reload(param) {
     localStorage.setItem('bag', JSON.stringify(param));

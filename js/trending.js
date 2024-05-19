@@ -1,18 +1,18 @@
-const mascaras = document.querySelector('#mascaras');
+// import createProducts from "./mascaras.js";
 
+const trending = document.querySelector('#trend');
 let itens = []
 
-fetch('../products/products.json')
+fetch('../products/trendings.json')
     .then(response => response.json())
     .then(json => {
         itens = json
         itens.forEach(element => {
-            mascaras.appendChild(createProducts(element))
+            trending.appendChild(createTrend(element))
         });
     })
 
-
-export default function createProducts(produtc) {
+function createTrend(produtc) {
     const ul = document.createElement('ul');
     ul.classList.add('item__item');
 

@@ -108,4 +108,8 @@
     .itens__bag--item {
         width: 100px;
     }
+
+    .empty {
+        font-size: 25px;
+    }
 }

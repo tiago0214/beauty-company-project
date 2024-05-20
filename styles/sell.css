@@ -55,7 +55,8 @@
     box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
 }
 
-.container__sell--card--name {
+.container__sell--card--name,
+.container__sell--card--value {
     font-size: 15px;
 }
 
@@ -68,43 +69,37 @@
     width: 80%;
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
     gap: 10px;
-}
+} */
 
-@media screen and (max-width:500px) {
-    /* .container__sell--card--item--link {
-        width: 7em;
-        padding: 0;
-        text-align: center;
-        
-    } */
-
+@media screen and (max-width:700px) {
     .container__sell--card {
         width: 50vw;
+        gap: 2vw;
     }
 
     .swiper-slide-active {
         justify-content: center;
     }
-}
 
-
-@media screen and (min-width:500px) {
     .container__sell--card--item--link {
-        /* width: 7em; */
+        width: 4em;
         text-align: center;
-        /* padding: 1em; */
+        justify-content: center;
+        /* margin: 0; */
     }
 
-    .container__sell--card {
-        width: 50vw;
+    .container__sell--card--link {
+        margin: 0;
     }
 
     .swiper-slide-active {
         justify-content: center;
     }
+
 }
+
 
 @media screen and (min-width:900px) {
     .container__sell--card {

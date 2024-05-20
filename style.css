@@ -8,6 +8,7 @@
 @import url("./styles/service.css");
 @import url("./styles/bag_user/mascaras.css");
 @import url("./styles/bag_user/popup.css");
+@import url("./styles/bag_user/create.css");
 
 :root {
     --fonte-principal: "Poppins";

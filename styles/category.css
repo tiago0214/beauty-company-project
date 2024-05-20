@@ -44,7 +44,7 @@
 @media screen and (max-width:600px) {
     .category__topics--item {
         margin-top: 10px;
-        width: 150px;
+        width: 100px;
     }
 
 }

@@ -1,10 +1,11 @@
 .bag {
-    width: 70vw;
+    width: 90vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: auto;
     justify-content: space-between;
     gap: 4vw;
+    margin-bottom: 5em;
 
 }
 
@@ -21,6 +22,7 @@
 .itens__bag {
     display: flex;
     margin: auto;
+    width: 60vw;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 5px;
@@ -43,16 +45,19 @@
 .sumary {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    margin: auto;
-    width: 500px;
-    padding-bottom: 4em;
+    margin-top: 1em;
+    height: 20em;
+    /* justify-content: space-between;  */
+    /* margin: auto; */
+    width: 50vw;
+    gap: 5px;
+    /* padding-bottom: 4em; */
 }
 
 .sumary__title {
     font-size: 20px;
     font-weight: 900;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 }
 
 .sumary__itens {
@@ -69,10 +74,11 @@
 
 .button__checkout {
     text-align: center;
-    margin-top: 24px;
+    margin-top: 80px;
     padding: 10px;
     color: white;
     background-color: black;
+    border-radius: 4px;
 }
 
 
@@ -96,13 +102,23 @@
     align-items: center;
 }
 
-@media screen and (max-width : 550px) {
+@media screen and (max-width : 800px) {
     .sumary {
         width: 100%;
+        margin: auto;
+        height: auto;
+
     }
 
     .bag {
         width: 90vw;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .itens__bag {
+        width: 100%;
+
     }
 
     .itens__bag--item {

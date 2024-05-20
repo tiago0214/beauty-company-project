@@ -44,6 +44,7 @@ export default function createProducts(produtc) {
         mascarasBag.push(produtc);
         reload(mascarasBag);
         updateIcon();
+        popup();
     }
 
     ul.appendChild(liImg);

@@ -44,6 +44,7 @@ function createTrend(produtc) {
         trendingBag.push(produtc);
         reload(trendingBag);
         updateIcon();
+        popup();
     }
 
     ul.appendChild(liImg);

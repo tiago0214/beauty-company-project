@@ -117,26 +117,18 @@ function popup() {
     const popup = document.getElementById('popup');
     const closePopupButton = document.getElementById('close-popup');
 
-    // Function to show the pop-up
     function showPopup() {
         popup.classList.remove('hidden');
-        // Automatically hide the pop-up after 3 seconds
         setTimeout(() => {
             popup.classList.add('hidden');
         }, 3000);
     }
 
-    // Add event listener to close button
     closePopupButton.addEventListener('click', () => {
         popup.classList.add('hidden');
     });
 
-    // Example function to simulate adding an item to the cart
-
-    // Show the pop-up
     showPopup();
 
-
-    // Simulate adding an item to the cart after 2 seconds (for demo purposes)
 }
 

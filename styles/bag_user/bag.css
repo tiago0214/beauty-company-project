@@ -90,7 +90,8 @@
     width: 100%;
     background-color: #f6f6f6;
     text-align: center;
-    padding: .5em;
+    /* padding: .5em; */
+    font-size: 12px;
 
 }
 

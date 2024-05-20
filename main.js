@@ -52,7 +52,7 @@ function createElement(product) {
     const link = document.createElement('a');
     link.setAttribute('href', '#')
     link.classList.add('container__sell--card--item--link');
-    link.innerHTML = `ADD TO BAG`
+    link.innerHTML = `<ion-icon name="cart"></ion-icon>`
     link.onclick = (event) => {
         event.preventDefault()
         bag.push(product);
@@ -60,6 +60,11 @@ function createElement(product) {
         updateIcon();
         popup();
     }
+    const hearth = document.createElement('a');
+    hearth.setAttribute('href', '#')
+    hearth.classList.add('container__sell--card--item--link');
+    hearth.innerHTML = `<ion-icon name="heart"></ion-icon>`
+
 
     slide.appendChild(ul)
     ul.appendChild(imgParent);
@@ -69,6 +74,7 @@ function createElement(product) {
 
     imgParent.appendChild(img);
     linkParent.appendChild(link);
+    linkParent.appendChild(hearth)
 
     return slide
 }

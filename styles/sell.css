@@ -32,15 +32,21 @@
 
 .container__sell--card--link {
     display: flex;
+    margin-left: 10px;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
 }
 
 .container__sell--card--item--link {
-    padding: 1em;
+    display: flex;
+    padding: .1em 1em .1em 1em;
     background-color: #000000;
     color: aliceblue;
-    font-size: 12px;
+    font-size: 25px;
     text-decoration: none;
     border-radius: 4px;
+
 }
 
 .container__sell--card--item--link:hover {
@@ -58,16 +64,17 @@
     width: 80%;
 }
 
-/* .swiper-pagination {
-    padding: 2em 0 3em 0;
-} */
+.swiper-wrapper {
+    gap: 10px;
+}
+
 @media screen and (max-width:500px) {
-    .container__sell--card--item--link {
+    /* .container__sell--card--item--link {
         width: 7em;
         padding: 0;
         text-align: center;
-        padding: 1em 0;
-    }
+        
+    } */
 
     .container__sell--card {
         width: 50vw;
@@ -81,10 +88,9 @@
 
 @media screen and (min-width:500px) {
     .container__sell--card--item--link {
-        width: 7em;
-        padding: 0;
+        /* width: 7em; */
         text-align: center;
-        padding: 1em;
+        /* padding: 1em; */
     }
 
     .container__sell--card {

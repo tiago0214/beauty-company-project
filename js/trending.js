@@ -38,7 +38,7 @@ function createTrend(produtc) {
     const bag = document.createElement('a');
     bag.setAttribute('href', '#');
     bag.classList.add('add__bag');
-    bag.innerHTML = `Add to bag`
+    bag.innerHTML = `<ion-icon name="cart"></ion-icon>`
     bag.onclick = (event) => {
         event.preventDefault()
         trendingBag.push(produtc);
@@ -47,12 +47,18 @@ function createTrend(produtc) {
         popup();
     }
 
+    const bagHearth = document.createElement('a');
+    bagHearth.setAttribute('href', '#')
+    bagHearth.classList.add('add__bag');
+    bagHearth.innerHTML = `<ion-icon name="heart"></ion-icon>`
+
     ul.appendChild(liImg);
     liImg.appendChild(img)
     ul.appendChild(name);
+    ul.appendChild(value);
     ul.appendChild(info);
-    info.appendChild(value);
     info.appendChild(bag);
+    info.appendChild(bagHearth);
 
     return ul;
 }

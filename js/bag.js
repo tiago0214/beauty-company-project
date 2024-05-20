@@ -40,14 +40,14 @@ function createPro(produtc) {
     name.innerHTML = `${produtc.name}`
 
     const info = document.createElement('li');
-    info.classList.add('info');
+    info.classList.add('bag__info');
     const value = document.createElement('p');
     value.classList.add('value');
     value.innerHTML = `${produtc.value}`
 
     const bag = document.createElement('a');
     bag.setAttribute('href', '#');
-    bag.classList.add('add__bag');
+    bag.classList.add('bag__remove');
     bag.innerHTML = `Remove`
 
 

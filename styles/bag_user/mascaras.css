@@ -66,6 +66,10 @@
     box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
 }
 
+.name {
+    font-size: 15px;
+}
+
 @media screen and (max-width:550px) {
     .item__item {
         width: 150px;

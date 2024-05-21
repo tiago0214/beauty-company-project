@@ -2,9 +2,7 @@
 
 # Makeup Mania
 
-A principal funcionalidade deste código é a manipulação de arquivos do tipo string, semelhante ao HTML.
-
-## What were implemented
+## What was implemented
 
 Menu:
 

@@ -60,10 +60,10 @@ function createElement(product) {
         updateIcon();
         popup();
     }
-    const hearth = document.createElement('a');
-    hearth.setAttribute('href', '#')
-    hearth.classList.add('container__sell--card--item--link');
-    hearth.innerHTML = `<ion-icon name="heart"></ion-icon>`
+    const heart = document.createElement('a');
+    heart.setAttribute('href', '#')
+    heart.classList.add('container__sell--card--item--link');
+    heart.innerHTML = `<ion-icon name="heart"></ion-icon>`
 
 
     slide.appendChild(ul)
@@ -74,7 +74,7 @@ function createElement(product) {
 
     imgParent.appendChild(img);
     linkParent.appendChild(link);
-    linkParent.appendChild(hearth)
+    linkParent.appendChild(heart)
 
     return slide
 }

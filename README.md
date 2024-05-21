@@ -2,9 +2,7 @@
 
 # Makeup Mania
 
-## What was implemented
-
-Menu:
+## Features
 
 > - Features such as add to bag, favorite were implemented to give a real experience of saving products on the platform.
 > - Those features store data in local storage to prevent the user from losing their products if something happens.

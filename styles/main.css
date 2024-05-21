@@ -74,8 +74,8 @@
 .imagens {
     display: flex;
     justify-content: flex-end;
-    background-color: #FB98AA;
-    height: 65vh;
+    background-color: rgb(221, 138, 159);
+    height: 60vh;
 
 }
 

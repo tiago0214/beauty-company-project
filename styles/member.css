@@ -6,13 +6,15 @@
 
 .container__member--banner {
     width: 1118px;
-    background-image: url("/assets/HP_WK1224_IBC_MemberLove_XL.webp");
+    background-image: url("/assets/region.png");
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-    /* background-size: cover; */
+    background-size: cover;
     height: 200px;
     padding: 2em;
+    box-shadow: 0px 0px 9px -1px #bf7bc8;
+
 }
 
 .container__member--lista {

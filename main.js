@@ -71,6 +71,7 @@ function createElement(product) {
         hearthBag.push(product)
         reloadHearth(hearthBag)
         updateHearth();
+        popup();
     }
 
     slide.appendChild(ul)
@@ -154,6 +155,5 @@ function popup() {
     });
 
     showPopup();
-
 }
 

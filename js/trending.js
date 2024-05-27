@@ -57,6 +57,7 @@ function createTrend(produtc) {
         hearthBag.push(produtc)
         reloadHearth(hearthBag)
         updateHearth();
+        popup();
     }
 
     ul.appendChild(liImg);

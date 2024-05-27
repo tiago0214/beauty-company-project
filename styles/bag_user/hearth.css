@@ -1,8 +1,8 @@
 .itens__hearth {
     display: flex;
     margin: auto;
-    /* width: 90vw; */
+    width: 100%;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+    justify-content: center;
     gap: 5px;
 }

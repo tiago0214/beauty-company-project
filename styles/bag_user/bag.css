@@ -4,7 +4,7 @@
     flex-direction: row;
     margin: auto;
     justify-content: space-between;
-    gap: 4vw;
+    gap: 1vw;
     margin-bottom: 5em;
 
 }
@@ -24,7 +24,7 @@
     margin: auto;
     width: 60vw;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+    justify-content: center;
     gap: 5px;
 }
 

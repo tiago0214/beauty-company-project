@@ -73,6 +73,14 @@
     gap: 10px;
 } */
 
+
+@media screen and (max-width:650px) {
+    .container__sell--card--img {
+        display: flex;
+        justify-content: end;
+    }
+}
+
 @media screen and (max-width:700px) {
     .container__sell--card {
         width: 50vw;

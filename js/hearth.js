@@ -1,4 +1,5 @@
 const favorites = document.getElementById('favorites');
+const empty = document.querySelector('.empty__heart');
 
 let hearth = JSON.parse(localStorage.getItem('hearth')) || [];
 
@@ -71,4 +72,10 @@ function updateHearthBag() {
 
 function reload(param) {
     localStorage.setItem('hearth', JSON.stringify(param));
+}
+
+if (hearth.length === 0) {
+    empty.innerHTML = `You haven't added any items to your favorites yet!`
+} else {
+    empty.style.display = "none";
 }

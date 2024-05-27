@@ -1,8 +1,15 @@
 .itens__hearth {
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 90vw;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
+}
+
+.empty__heart {
+    margin-top: 30px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
 }

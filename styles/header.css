@@ -53,6 +53,14 @@
 .menu__right--item {
     margin: 0 10px;
     max-width: 100%;
+
+}
+
+.hearth {
+    font-size: 27px;
+    color: #000000;
+    display: flex;
+    align-items: center;
 }
 
 .link__menu {

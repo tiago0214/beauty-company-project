@@ -4,6 +4,7 @@ const valueDocument = document.querySelector('.total__value')
 const bagEmpty = document.querySelector('.empty');
 
 let bagy = JSON.parse(localStorage.getItem('bag')) || [];
+let hearthBagBag = JSON.parse(localStorage.getItem('hearth')) || [];
 
 if (bagy.length === 0) {
     bagEmpty.innerHTML = `Your bag is empty!`
@@ -12,7 +13,6 @@ if (bagy.length === 0) {
 }
 
 let totalValue = 0;
-let totalItens = bagy.length;
 let selectObject = 0;
 
 
@@ -77,7 +77,6 @@ function updateValue() {
     itensElement.innerHTML = `${bagy.length}`
     valueDocument.innerHTML = `R$ ${totalValue}`
 }
-
 
 function removeItem() {
     bagy = bagy.filter((item) => {

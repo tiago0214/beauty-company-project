@@ -4,6 +4,7 @@ const trending = document.querySelector('#trend');
 let itens = []
 
 let trendingBag = JSON.parse(localStorage.getItem('bag')) || [];
+let hearthBagTrendings = JSON.parse(localStorage.getItem('hearth')) || [];
 
 
 fetch('../products/trendings.json')
@@ -51,6 +52,12 @@ function createTrend(produtc) {
     bagHearth.setAttribute('href', '#')
     bagHearth.classList.add('add__bag');
     bagHearth.innerHTML = `<ion-icon name="heart"></ion-icon>`
+    bagHearth.onclick = (event) => {
+        event.preventDefault()
+        hearthBag.push(produtc)
+        reloadHearth(hearthBag)
+        updateHearth();
+    }
 
     ul.appendChild(liImg);
     liImg.appendChild(img)
@@ -65,6 +72,10 @@ function createTrend(produtc) {
 
 function reload(param) {
     localStorage.setItem('bag', JSON.stringify(param));
+}
+
+function reloadHearth(param) {
+    localStorage.setItem('hearth', JSON.stringify(param));
 }
 
 function updateIcon() {

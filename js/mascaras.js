@@ -4,6 +4,7 @@ const mascaras = document.querySelector('#mascaras');
 let itens = []
 
 let mascarasBag = JSON.parse(localStorage.getItem('bag')) || [];
+// let hearthBagMascaras = JSON.parse(localStorage.getItem('hearth')) || [];
 
 fetch('../products/products.json')
     .then(response => response.json())
@@ -51,6 +52,12 @@ export default function createProducts(produtc) {
     bagHearth.setAttribute('href', '#')
     bagHearth.classList.add('add__bag');
     bagHearth.innerHTML = `<ion-icon name="heart"></ion-icon>`
+    bagHearth.onclick = (event) => {
+        event.preventDefault()
+        hearthBag.push(produtc)
+        reloadHearth(hearthBag)
+        updateHearth();
+    }
 
     ul.appendChild(liImg);
     liImg.appendChild(img)
@@ -65,6 +72,10 @@ export default function createProducts(produtc) {
 
 function reload(param) {
     localStorage.setItem('bag', JSON.stringify(param));
+}
+
+function reloadHearth(param) {
+    localStorage.setItem('hearth', JSON.stringify(param));
 }
 
 function updateIcon() {

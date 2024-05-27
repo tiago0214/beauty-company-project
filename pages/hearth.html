@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../styles/bag_user/bag.css">
+    <link rel="stylesheet" href="../styles/bag_user/hearth.css">
 </head>
 
 <body>
@@ -29,14 +30,14 @@
         <nav class="menu">
             <ul class="menu__left">
                 <li class="menu__left--item"><a class="link__menu" href="../index.html">Home</a></li>
+                <!-- <li class="menu__left--item"><a class="link__menu" href="">New</a></li> -->
                 <li class="menu__left--item"><a class="link__menu" href="../pages/mascaras.html">Mascaras</a> </li>
-                <li class="menu__left--item"><a class="link__menu" href="" id="trending">Trendings</a></li>
-                <!-- <li class="menu__left--item"><a class="link__menu" href="">Beauty Services</a></li> -->
+                <li class="menu__left--item"><a class="link__menu" href="../pages/trending.html">Trendings</a></li>
             </ul>
             <a class="hamburguer--icon" id="menu" href=""><ion-icon name="menu"></ion-icon></a>
             <ul class="menu__right">
                 <a href="hearth.html" class="menu__right--item hearth"><ion-icon name="heart-outline"></ion-icon></a>
-                <a href="../pages/bag.html" class="menu__right--item"><svg aria-hidden="true" width="24" height="24"
+                <a href="bag.html" class="menu__right--item"><svg aria-hidden="true" width="24" height="24"
                         viewBox="0 0 24 24" version="1.1">
                         <g id="Base/Icons/UI/bag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <path
@@ -44,10 +45,9 @@
                                 id="Icon-Color" fill="#000000" fill-rule="nonzero"></path>
                         </g>
                     </svg>
-                    <span class="icon"></span>
+                    <span class="icon" id="icon"></span>
                     <!-- <span class="BagIcon__notificationDot"></span> -->
                 </a>
-
                 <a href="" class="menu__right--item"><svg class="Button-ds__icon" aria-hidden="true" width="24"
                         height="24">
                         <defs>
@@ -80,21 +80,15 @@
         <li class="hamburguer--item"><a class="link__hamburguer" href="../index.html">Home</a></li>
         <!-- <li class="hamburguer--item"><a class="link__hamburguer" href="">New</a></li> -->
         <li class="hamburguer--item"><a class="link__hamburguer" href="../pages/mascaras.html">Mascaras</a> </li>
-        <li class="hamburguer--item"><a class="link__hamburguer" href="">Trendings</a></li>
-        <!-- <li class="hamburguer--item"><a class="link__hamburguer" href="">Discover</a></li> -->
-        <!-- <li class="hamburguer--item"><a class="link__hamburguer" href="">Beauty Services</a></li> -->
+        <li class="hamburguer--item"><a class="link__hamburguer" href="../pages/trending.html">Trendings</a></li>
     </ul>
-    <main class="special">
+    <main class="bag">
 
-        <section class="item">
-            <div class="item__title">Trending</div>
-            <div class="item__bag" id="trend">
+        <section class="itens">
+            <div class="itens__title">Favorites</div>
+            <div class="itens__hearth" id="favorites">
             </div>
         </section>
-        <div id="popup" class="popup hidden">
-            <p>Item added to your cart!</p>
-            <button id="close-popup">Close</button>
-        </div>
     </main>
     <footer>
         <div class="bar__footer">
@@ -103,8 +97,8 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="../js/trending.js"></script>
     <script src="../main.js"></script>
+    <script src="../js/hearth.js"></script>
 </body>
 
 </html>

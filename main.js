@@ -1,6 +1,7 @@
 const menu = document.getElementById('menu');
 const menuBag = document.getElementById('menu--bag');
 const icon = document.querySelector('.icon');
+const hearthIcon = document.querySelector('.hearth');
 
 const listaItens = document.getElementById('lista');
 const listaItensBag = document.getElementById('lista--bag');
@@ -12,6 +13,7 @@ let itensSell = []
 let itensTrending = []
 
 let bag = JSON.parse(localStorage.getItem('bag')) || [];
+let hearthBag = JSON.parse(localStorage.getItem('hearth')) || [];
 
 menu.addEventListener('click', (event) => {
     event.preventDefault();
@@ -60,11 +62,16 @@ function createElement(product) {
         updateIcon();
         popup();
     }
-    const heart = document.createElement('a');
-    heart.setAttribute('href', '#')
-    heart.classList.add('container__sell--card--item--link');
-    heart.innerHTML = `<ion-icon name="heart"></ion-icon>`
-
+    const hearth = document.createElement('a');
+    hearth.setAttribute('href', '#')
+    hearth.classList.add('container__sell--card--item--link');
+    hearth.innerHTML = `<ion-icon name="heart"></ion-icon>`;
+    hearth.onclick = (event) => {
+        event.preventDefault()
+        hearthBag.push(product)
+        reloadHearth(hearthBag)
+        updateHearth();
+    }
 
     slide.appendChild(ul)
     ul.appendChild(imgParent);
@@ -74,7 +81,7 @@ function createElement(product) {
 
     imgParent.appendChild(img);
     linkParent.appendChild(link);
-    linkParent.appendChild(heart)
+    linkParent.appendChild(hearth)
 
     return slide
 }
@@ -101,10 +108,12 @@ function loading() {
         })
 }
 
-
-
 function reload(param) {
     localStorage.setItem('bag', JSON.stringify(param));
+}
+
+function reloadHearth(param) {
+    localStorage.setItem('hearth', JSON.stringify(param));
 }
 
 function updateIcon() {
@@ -116,8 +125,18 @@ function updateIcon() {
         icon.style.transform = "translate(-220%, 60%)";
     }
 }
+function updateHearth() {
+    if (hearthBag.length === 0) {
+        hearthIcon.innerHTML = `<ion-icon name="heart-outline"></ion-icon>`
+        hearthIcon.style.color = "lightpink";
+    } else {
+        hearthIcon.innerHTML = `<ion-icon name="heart"></ion-icon>`
+        hearthIcon.style.color = "lightpink";
+    }
+}
 
 updateIcon();
+updateHearth();
 
 function popup() {
     const popup = document.getElementById('popup');

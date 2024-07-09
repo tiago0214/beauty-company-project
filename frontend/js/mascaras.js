@@ -5,7 +5,7 @@ let itens = []
 
 let mascarasBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagMascaras = JSON.parse(localStorage.getItem('hearth')) || [];
-const server = 'http://localhost:3000';
+const server = process.env.SERVER;
 fetch(`${server}/mascaras`)
     .then(response => response.json())
     .then(json => {

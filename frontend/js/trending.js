@@ -6,7 +6,7 @@ let itens = []
 let trendingBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagTrendings = JSON.parse(localStorage.getItem('hearth')) || [];
 
-const server = 'http://localhost:3000'
+const server = process.env.SERVER
 fetch(`${server}/trendings`)
     .then(response => response.json())
     .then(json => {

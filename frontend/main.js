@@ -88,7 +88,7 @@ function createElement(product) {
 }
 
 function loading() {
-    const server = 'http://localhost:3000'
+    const server = process.env.SERVER
     fetch(`${server}/mascaras`)
         .then((response) => response.json())
         .then((json) => {

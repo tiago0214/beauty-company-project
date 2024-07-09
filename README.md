@@ -19,8 +19,8 @@
 ### Architecture
 > - **MVC Pattern**: The backend follows the Model-View-Controller (MVC) architecture. This design pattern separates the application into three interconnected components:
 >    - **Model**: Manages the data and business logic.
->    - **View**: Handles the presentation layer (not applicable in a pure backend service, but relevant for templating engines if used).
+>    - **View**: Handles the presentation layer (not applicable in a pure backend service).
 >    - **Controller**: Processes incoming requests, interacts with the Model, and sends responses back to the client.
 ### Database Integration:
 > - **MongoDB**: I use MongoDB, a NoSQL database, for storing and managing product data. MongoDB's flexibility and scalability make it an ideal choice for our application.
-> - **Mongoose**: For schema management and data modeling, we use Mongoose. It provides a straightforward, schema-based solution to model our application data and includes built-in data validation, type casting, and query building.
+> - **Mongoose**: For schema management and data modeling, I use Mongoose. It provides a straightforward, schema-based solution to model for the application data and includes built-in data validation, type casting, and query building.

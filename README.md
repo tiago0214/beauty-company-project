@@ -2,7 +2,7 @@
 
 # Makeup Mania
 
-## Frontend
+## Front-end
 
 > - Features such as add to bag, favorite were implemented to give a real experience of saving products on the platform.
 > - Those features store data in local storage to prevent the user from losing their products if something happens.
@@ -10,7 +10,7 @@
 > - On the bag and favorite pages, it shows a button to remove items from them
 > - I implemented a carousel to show the products on the home page, to give a better experience.
 
-## Backend
+## Back-end
 
 > - All product data displayed on the front-end is stored in the backend. The communication between the client and the server is handled through RESTful API endpoints.
 ### Technology Stack:

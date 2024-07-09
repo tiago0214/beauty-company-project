@@ -88,7 +88,7 @@ function createElement(product) {
 }
 
 function loading() {
-    const server = process.env.SERVER
+    const server = 'https://beauty-company-project.onrender.com'
     fetch(`${server}/mascaras`)
         .then((response) => response.json())
         .then((json) => {

@@ -22,5 +22,5 @@
 >    - **View**: Handles the presentation layer (not applicable in a pure backend service).
 >    - **Controller**: Processes incoming requests, interacts with the Model, and sends responses back to the client.
 ### Database Integration:
-> - **MongoDB**: I use MongoDB, a NoSQL database, for storing and managing product data. MongoDB's flexibility and scalability make it an ideal choice for our application.
-> - **Mongoose**: For schema management and data modeling, I use Mongoose. It provides a straightforward, schema-based solution to model for the application data and includes built-in data validation, type casting, and query building.
+> - **MongoDB**: I used MongoDB, a NoSQL database, for storing and managing product data. MongoDB's flexibility and scalability make it an ideal choice for the application.
+> - **Mongoose**: For schema management and data modeling, I used Mongoose. It provides a straightforward, schema-based solution to model for the application data and includes built-in data validation, type casting, and query building.

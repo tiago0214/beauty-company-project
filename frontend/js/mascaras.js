@@ -5,8 +5,8 @@ let itens = []
 
 let mascarasBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagMascaras = JSON.parse(localStorage.getItem('hearth')) || [];
-const server = 'https://beauty-company-project.onrender.com';
-fetch(`${server}/mascaras`)
+
+fetch('../products/products.json')
     .then(response => response.json())
     .then(json => {
         itens = json
@@ -24,7 +24,7 @@ export default function createProducts(produtc) {
     liImg.classList.add('item__img');
     const img = document.createElement('img');
     img.classList.add('item__img');
-    img.setAttribute('src', produtc.img)
+    img.setAttribute('src', `.${produtc.img}`)
 
     const name = document.createElement('li');
     name.classList.add('name');

@@ -88,8 +88,7 @@ function createElement(product) {
 }
 
 function loading() {
-    const server = 'https://beauty-company-project.onrender.com'
-    fetch(`${server}/mascaras`)
+    fetch('./products/products.json')
         .then((response) => response.json())
         .then((json) => {
             itensSell = json
@@ -99,7 +98,7 @@ function loading() {
             });
         })
 
-    fetch(`${server}/trendings`)
+    fetch('./products/trendings.json')
         .then((response) => response.json())
         .then((json) => {
             itensTrending = json

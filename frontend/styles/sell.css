@@ -26,7 +26,7 @@
 }
 
 .container__sell--card--img {
-    max-width: 90%;
+    max-width: 200px;
     text-align: center;
 }
 
@@ -87,6 +87,10 @@
         gap: 2vw;
     }
 
+    .container__sell--card--img{
+        max-width: 90%;
+    }
+
     .swiper-slide-active {
         justify-content: center;
     }
@@ -113,6 +117,7 @@
     .container__sell--card {
         width: 25vw;
     }
+
 
     .swiper-slide-active,
     .swiper-slide,

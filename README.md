@@ -12,10 +12,10 @@
 
 ## Back-end
 
-> - All product data displayed on the front-end is stored in the backend. The communication between the client and the server is handled through RESTful API endpoints.
+> - All products data displayed on the front-end is stored in the backend. The communication between the client and the server is handled through RESTful API endpoints.
 ### Technology Stack:
-> - **Node.js**: The backend is built using Node.js, leveraging its non-blocking, event-driven architecture for efficient and scalable performance.
-> - **Express.js**: I utilize the Express framework to handle routing and server-side logic, streamlining the development process and enhancing the maintainability of our codebase.
+> - **Node.js**: The backend is built using Node.js.
+> - **Express.js**: I utilize the Express framework to handle routing and server-side logic.
 ### Architecture
 > - **MVC Pattern**: The backend follows the Model-View-Controller (MVC) architecture. This design pattern separates the application into three interconnected components:
 >    - **Model**: Manages the data and business logic.

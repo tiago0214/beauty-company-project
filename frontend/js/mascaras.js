@@ -24,7 +24,7 @@ export default function createProducts(produtc) {
     liImg.classList.add('item__img');
     const img = document.createElement('img');
     img.classList.add('item__img');
-    img.setAttribute('src', `.${produtc.img}`)
+    img.setAttribute('src', produtc.img)
 
     const name = document.createElement('li');
     name.classList.add('name');

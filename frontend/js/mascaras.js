@@ -5,8 +5,9 @@ let itens = []
 
 let mascarasBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagMascaras = JSON.parse(localStorage.getItem('hearth')) || [];
+const server = 'https://beauty-company-project.onrender.com'
 
-fetch('../products/products.json')
+fetch(`${server}/mascaras`)
     .then(response => response.json())
     .then(json => {
         itens = json

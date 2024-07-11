@@ -6,7 +6,9 @@ let itens = []
 let trendingBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagTrendings = JSON.parse(localStorage.getItem('hearth')) || [];
 
-fetch('../products/trendings.json')
+const server = 'https://beauty-company-project.onrender.com'
+
+fetch(`${server}/trendings`)
     .then(response => response.json())
     .then(json => {
         itens = json

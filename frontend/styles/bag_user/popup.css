@@ -6,7 +6,7 @@
     background-color: #ffffff;
     color: rgb(237 85 182);
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -14,10 +14,12 @@
     z-index: 1000;
     gap: 3em;
     border: solid 1px #c87bc3;
-    box-shadow: inset 0px 0px 9px -1px rgb(237 85 182);
+    box-shadow: inset 0px 0px 5px -1px rgb(237 85 182);
+
 }
 
 .popup:hover {
+    /* box-shadow: 0px 0px 50px 10px rgba(247, 0, 255, 0.279); */
     box-shadow: 0px 0px 9px -1px rgb(237 85 182);
 }
 
@@ -34,6 +36,8 @@
     border-radius: 3px;
     cursor: pointer;
     border: solid 1px #c87bbb;
+
+    transition: background-color 1s;
 }
 
 .popup button:hover {

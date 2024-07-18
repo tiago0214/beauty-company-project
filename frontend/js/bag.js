@@ -67,6 +67,11 @@ function createPro(produtc) {
         removeItem();
         updateValue();
         updateIcon();
+
+        if( bagy.length === 0 ){
+            bagEmpty.innerHTML = `Your bag is empty!`
+            bagEmpty.style.display = "block";
+        }
     }
 
     return ul;

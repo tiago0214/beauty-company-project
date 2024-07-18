@@ -48,6 +48,11 @@ function createPro(produtc) {
         removeItem();
         updateHearthBag();
         console.log(hearth.length)
+
+        if( hearth.length === 0 ){
+            empty.style.display = "block";
+            empty.innerHTML = `You haven't added any items to your favorites yet!`
+        }
     }
 
     return ul;

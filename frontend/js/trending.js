@@ -6,7 +6,7 @@ let itens = []
 let trendingBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagTrendings = JSON.parse(localStorage.getItem('hearth')) || [];
 
-const server = 'https://beauty-company-project-backend-euk8xevgx.vercel.app/'
+const server = 'https://beauty-company-project-backend-euk8xevgx.vercel.app'
 
 fetch(`${server}/trendings`)
     .then(response => response.json())

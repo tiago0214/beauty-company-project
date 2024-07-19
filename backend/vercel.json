@@ -12,5 +12,16 @@
     "src": "/(.*)",
     "dest": "server.js"
    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://beauty-company-project.vercel.app"
+        }
+      ]
+    }
   ]
  }

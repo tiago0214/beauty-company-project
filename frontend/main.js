@@ -88,7 +88,13 @@ function createElement(product) {
 }
 const server = 'https://beauty-company-project-backend-euk8xevgx.vercel.app'
 function loading() {
-    fetch(`${server}/mascaras`)
+    fetch(`${server}/mascaras`,{
+            method: 'GET',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            mode: 'cors' // This is important
+        })
         .then((response) => response.json())
         .then((json) => {
             itensSell = json

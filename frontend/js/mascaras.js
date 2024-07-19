@@ -5,7 +5,7 @@ let itens = []
 
 let mascarasBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagMascaras = JSON.parse(localStorage.getItem('hearth')) || [];
-const server = 'https://beauty-company-project.onrender.com'
+const server = 'https://beauty-company-backend.vercel.app'
 
 fetch(`${server}/mascaras`)
     .then(response => response.json())

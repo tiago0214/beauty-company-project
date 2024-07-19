@@ -86,8 +86,8 @@ function createElement(product) {
 
     return slide
 }
-const server = 'https://beauty-company-project.onrender.com'
-// const server = 'https://beauty-company-project-backend-euk8xevgx.vercel.app'
+// const server = 'https://beauty-company-project.onrender.com'
+const server = 'https://beauty-company-backend.vercel.app'
 function loading() {
     fetch(`${server}/mascaras`,{
             method: 'GET',

@@ -6,15 +6,13 @@ let itens = []
 let trendingBag = JSON.parse(localStorage.getItem('bag')) || [];
 // let hearthBagTrendings = JSON.parse(localStorage.getItem('hearth')) || [];
 
-const server = 'https://beauty-company-project.onrender.com'
-
-fetch(`${server}/trendings`)
+fetch('../assets/products/trendigs.json')
     .then(response => response.json())
-    .then(json => {
-        itens = json
-        itens.forEach(element => {
+    .then((jsonList) => {
+        trending.innerHTML = ""
+        jsonList.forEach(element => {
             trending.appendChild(createTrend(element))
-        });
+        })
     })
 
 function createTrend(produtc) {
@@ -25,7 +23,7 @@ function createTrend(produtc) {
     liImg.classList.add('item__img');
     const img = document.createElement('img');
     img.classList.add('item__img');
-    img.setAttribute('src', produtc.img)
+    img.setAttribute('src', `.${produtc.img}`)
 
     const name = document.createElement('li');
     name.classList.add('name');

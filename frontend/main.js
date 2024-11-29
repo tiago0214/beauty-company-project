@@ -9,8 +9,24 @@ const listaItensBag = document.getElementById('lista--bag');
 const sellProducts = document.querySelector('.swiper-wrapper');
 const trendings = document.querySelector('#trendings');
 
-let itensSell = []
-let itensTrending = []
+fetch('./assets/products/mascaras.json')
+    .then(response => response.json())
+    .then((jsonList) => {
+        sellProducts.innerHTML = ""
+        jsonList.forEach(element => {
+            sellProducts.appendChild(createElement(element))
+        })
+    })
+
+fetch('./assets/products/trendigs.json')
+    .then(response => response.json())
+    .then((jsonList) => {
+        trendings.innerHTML = ""
+        jsonList.forEach(element => {
+            trendings.appendChild(createElement(element))
+        })
+    })
+
 
 let bag = JSON.parse(localStorage.getItem('bag')) || [];
 let hearthBag = JSON.parse(localStorage.getItem('hearth')) || [];
@@ -86,35 +102,7 @@ function createElement(product) {
 
     return slide
 }
-const server = 'https://beauty-company-project.onrender.com'
-// const server = 'https://beauty-company-backend.vercel.app'
-function loading() {
-    fetch(`${server}/mascaras`,{
-            method: 'GET',
-            headers: {
-            'Content-Type': 'application/json'
-            },
-            mode: 'cors' // This is important
-        })
-        .then((response) => response.json())
-        .then((json) => {
-            itensSell = json
-            sellProducts.innerHTML = ""
-            itensSell.forEach(element => {
-                sellProducts.appendChild(createElement(element))
-            });
-        })
 
-    fetch(`${server}/trendings`)
-        .then((response) => response.json())
-        .then((json) => {
-            itensTrending = json
-            trendings.innerHTML = ""
-            itensTrending.forEach((element) => {
-                trendings.appendChild(createElement(element));
-            })
-        })
-}
 
 function reload(param) {
     localStorage.setItem('bag', JSON.stringify(param));
